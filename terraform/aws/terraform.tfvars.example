@@ -1,0 +1,4 @@
+project_name = "tree-api"
+region       = "us-east-1"
+environment  = "dev"
+

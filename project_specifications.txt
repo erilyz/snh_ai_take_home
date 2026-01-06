@@ -1,0 +1,67 @@
+SNH AI – Engineering Take-Home Challenge
+
+Overview
+Build a production-ready HTTP API server for managing hierarchical tree data structures. This challenge
+simulates a real-world scenario where your API will be used by other developers and teams.
+
+Core Requirements
+Your solution should include:
+1. API Endpoints - An HTTP server that exposes two endpoints:
+    - GET /api/tree - Returns all trees from the database
+    - POST /api/tree - Creates a new node and attaches it to a specified parent node
+2. Data Persistence - Implement a persistence layer that retains data between server restarts/stops
+
+Critical constraints:
+- Approach this as you would a production API that other developers will integrate with and
+maintain.
+- Use Python and libraries you're comfortable with.
+- Simple straight forward approach
+- Cost effective solution as this will be a POC, so for data persistence let's use a storage bucket that can easily
+  be upgraded later on.
+
+API Specifications
+GET /api/tree
+    Returns an array of all trees in the database.
+
+Example Response in JSON:
+[
+    {
+        "id": 1,
+        "label": "root",
+        "children": [
+            {
+                "id": 3,
+                "label": "bear",
+                "children": [
+                    {
+                        "id": 4,
+                        "label": "cat",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+POST /api/tree
+    Creates a new node and attaches it to the specified parent node in the tree.
+
+What We're Looking For
+We evaluate submissions holistically across multiple dimensions (critical constraints):
+    • Correctness - Does it work as specified?
+    • Production-readiness - Could this be deployed and maintained in a real environment?
+    • Code quality - Is it clean, well-organized, and easy to understand?
+    • Testing approach - How thoroughly is the solution validated?
+    • Edge case handling - How does it behave when things go wrong?
+    • Documentation - Can another developer understand and work with your code?
+
+Think about what "production-ready" means to you and demonstrate your interpretation through your implementation choices.
+
+Submission Guidelines
+    • Include a README with setup and run instructions
+    • Make sure all tests can be run easily
+    • Feel free to document your design decisions and trade-offs
+
+Estimated time commitment: Most candidates spend 2-4 hours on this challenge. Quality over quantity -
+we'd rather see a well-crafted partial solution than a rushed complete one.
