@@ -1,4 +1,4 @@
-# HTTP Server Coding Challenge
+# SNH AI - HTTP Server Coding Challenge
 
 Production-ready HTTP API for managing hierarchical tree data structures. Built with FastAPI, designed for simplicity, cost-effectiveness, and cloud portability.
 

@@ -1,6 +1,6 @@
 # Scripts Directory
 
-Utility scripts for the HTTP Server Coding Challenge.
+Utility scripts for the SNH AI - HTTP Server Coding Challenge.
 
 ## Available Scripts
 
